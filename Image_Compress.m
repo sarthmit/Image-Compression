@@ -3,6 +3,7 @@ clear; close all; clc;
 pkg load image;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 img = imread('image-3.jpg');
 img1 = imresize(img, [256 256]);
 img = double(img1)/255;
@@ -11,6 +12,11 @@ img = double(imread('img1.jpeg'));
 img = imresize(img, [128 128]);
 img = img/255;
 >>>>>>> 22b93fc55870810e31458c622b5cc72bbe8f363e
+=======
+img = double(imread('image-3.jpg'));
+img1 = imresize(img, [256 256]);
+img = img1/255;
+>>>>>>> d566bd7b78d76cf5bdeca0c64fd19c43c8f8472c
 
 X = reshape(img, size(img,1)*size(img,2),3);
 
@@ -52,7 +58,11 @@ imagesc(X_compressed);
 title(sprintf('Compressed, with %d colors.', K));
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 print -djpg image.jpg
 =======
 pause;
 >>>>>>> 22b93fc55870810e31458c622b5cc72bbe8f363e
+=======
+pause;
+>>>>>>> d566bd7b78d76cf5bdeca0c64fd19c43c8f8472c
