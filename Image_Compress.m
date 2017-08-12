@@ -2,9 +2,9 @@ clear; close all; clc;
 
 pkg load image;
 
-img = double(imread('img1.jpeg'));
-img = imresize(img, [128 128]);
-img = img/255;
+img = double(imread('image-3.jpg'));
+img1 = imresize(img, [256 256]);
+img = img1/255;
 
 X = reshape(img, size(img,1)*size(img,2),3);
 
