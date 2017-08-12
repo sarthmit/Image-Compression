@@ -1,6 +1,6 @@
 <h1> Image-Compression </h1>
 
-# Image_Compress.py
+<h5> Image_Compress.py </h5>
 
 Compresses image "image-3.jpg" to 8-bit colours version using K-means Clustering algorithm.
 
