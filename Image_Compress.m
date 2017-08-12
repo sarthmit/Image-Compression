@@ -2,9 +2,15 @@ clear; close all; clc;
 
 pkg load image;
 
+<<<<<<< HEAD
 img = imread('image-3.jpg');
 img1 = imresize(img, [256 256]);
 img = double(img1)/255;
+=======
+img = double(imread('img1.jpeg'));
+img = imresize(img, [128 128]);
+img = img/255;
+>>>>>>> 22b93fc55870810e31458c622b5cc72bbe8f363e
 
 X = reshape(img, size(img,1)*size(img,2),3);
 
@@ -45,4 +51,8 @@ subplot(1,2,2);
 imagesc(X_compressed);
 title(sprintf('Compressed, with %d colors.', K));
 
+<<<<<<< HEAD
 print -djpg image.jpg
+=======
+pause;
+>>>>>>> 22b93fc55870810e31458c622b5cc72bbe8f363e
